@@ -6,4 +6,6 @@
     <string name="btn_interruptor">INTERRUPTOR</string>
     <string name="texto_contador">Interruptor accionado: %1$d veces</string>
     <string name="switch_modo_noche">Activar Modo Noche</string>
+    <string name="btn_panico_text">ACTIVAR ALARMA DE PÁNICO</string>
+    <string name="toast_alerta_panico">¡¡ALARMA ENVIADA A LA CENTRAL DE EMERGENCIAS!!</string>
 </resources>

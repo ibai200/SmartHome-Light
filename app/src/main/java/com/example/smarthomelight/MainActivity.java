@@ -5,6 +5,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
@@ -13,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private LinearLayout layoutRaiz;
     private TextView tvEstadoLuz;
     private Button btnInterruptor;
+    private Button btnPanico;
 
     // Estado del interruptor
     private boolean luzEncendida = false;
@@ -37,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         tvContador.setText(getString(R.string.texto_contador, contadorPulsaciones));
         tvTitulo = findViewById(R.id.tvTitulo);
         switchModoNoche = findViewById(R.id.switchModoNoche);
+        btnPanico = findViewById(R.id.btnPanico);
 
         btnInterruptor.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,5 +76,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         // TODO RAMA feature/boton-panico: Configurar listener del botón de pánico
+
+        btnPanico.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, R.string.toast_alerta_panico, Toast.LENGTH_LONG).show();
+            }
+        });
     }
 }

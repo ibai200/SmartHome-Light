@@ -65,5 +65,13 @@
         Insertar aquí un Button rojo con id 'btnPanico' para
         disparar una alerta crítica que posteriormente será revertida con git revert.
     -->
+    <Button
+        android:id="@+id/btnPanico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/btn_panico_text"
+        android:backgroundTint="@color/alerta_panico"
+        android:textColor="#FFFFFF" />
 
 </LinearLayout>
